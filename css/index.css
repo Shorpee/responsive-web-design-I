@@ -166,6 +166,45 @@ footer {
     text-align: center
 }
 
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav img {
+        margin-bottom: 0;
+    }
+
+    nav li:first-child {
+        border-top: 1px solid;
+    }
+
+    nav li {
+        width: 100%;
+        font-size: large;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid;
+    }
+
+    .top-section blockquote {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .bottom-section blockquote {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
 @media (max-width: 800px) {
     body{
         padding-right: 20px;
@@ -186,11 +225,15 @@ footer {
     }
 
     h1 {
-        font-size: 60px;
+        font-size: 50px;
     }
     
 
     header img {
         display: none;
+    }
+
+    footer {
+        padding-bottom: 50px;
     }
 }
